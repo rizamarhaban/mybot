@@ -3,7 +3,15 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <UserSecretsId>dbe5653c-1108-4c22-ac7f-415dba3171a9</UserSecretsId>
+    <ApplicationIcon>Properties\BotApplication.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove=".template.config\**" />
+    <Content Remove=".template.config\**" />
+    <EmbeddedResource Remove=".template.config\**" />
+    <None Remove=".template.config\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
